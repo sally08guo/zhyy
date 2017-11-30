@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonbg"
+    android:id="@+id/layout_relative"
+    >
+
+    <include
+        android:id="@+id/common_toolbar"
+        layout="@layout/head_share" />
+    <!--<View
+        android:id="@+id/view1"
+        style="@style/view_common"
+        android:layout_below="@id/common_toolbar" />
+
+    <TextView
+        android:id="@+id/tijiao_tv_type"
+        style="@style/textview_common_gray"
+        android:layout_height="@dimen/container_height_small"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="@dimen/margin_common"
+        android:layout_marginTop="@dimen/margin_top_small"
+        android:gravity="center_vertical"
+        android:text="@string/time_checkin"
+        />
+
+    <TextView
+        android:id="@+id/tijiao_tv_type1"
+        style="@style/textview_common"
+        android:layout_height="@dimen/container_height_small"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="@dimen/mar10dp"
+        android:layout_marginTop="@dimen/margin_top_small"
+        android:layout_toRightOf="@id/tijiao_tv_type"
+        android:gravity="center_vertical"
+         />-->
+    <View
+        android:id="@+id/view2"
+        style="@style/view_common"
+        android:layout_below="@id/common_toolbar" />
+
+    <TextView
+        android:id="@+id/tijiao_tv_location"
+        style="@style/textview_common_gray"
+        android:layout_height="@dimen/container_height_small"
+        android:layout_below="@id/view2"
+        android:layout_marginLeft="@dimen/margin_common"
+        android:gravity="center_vertical"
+        android:text="@string/location_checkin" />
+
+    <TextView
+        android:id="@+id/tijiao_tv_location1"
+        style="@style/textview_common"
+        android:layout_height="@dimen/container_height_small"
+        android:layout_below="@id/view2"
+        android:layout_marginLeft="@dimen/mar10dp"
+        android:layout_toRightOf="@id/tijiao_tv_location"
+        android:gravity="center_vertical"
+        android:text="" />
+
+    <View
+        style="@style/view_common"
+        android:layout_below="@id/tijiao_tv_location1" />
+
+
+    <ImageView
+        android:id="@+id/tijiao_iv_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tijiao_tv_location1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_common"
+        android:src="@drawable/ic_takepic" />
+
+    <TextView
+        android:id="@+id/tijiao_tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/yuan_bg2"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_common" />
+
+</RelativeLayout>

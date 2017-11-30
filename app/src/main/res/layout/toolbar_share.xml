@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/common_toolbar"
+        style="@style/MyToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/toolbar_iv_back"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@drawable/a_back_baise" />
+
+        <TextView
+            android:id="@+id/toolbar_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="返回"
+            android:textColor="@color/color_blue_common"
+            android:textSize="@dimen/textsize_common" />
+
+        <TextView
+            android:id="@+id/toolbar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="主题"
+            android:textColor="@color/textcolor_common"
+            android:textSize="@dimen/textsize_common"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/toolbar_iv_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/mar10dp"
+            android:src="@mipmap/ic_modify"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/toolbar_iv_addIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/mar10dp"
+            android:src="@drawable/btn_add"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/toolbar_tv_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_common"
+            android:text="保存"
+            android:textColor="@color/color_blue_common"
+            android:textSize="16sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+</merge>

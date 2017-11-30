@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonbg"
+    android:orientation="vertical"
+    tools:context="com.tphy.zhyycs.ui.announce.AnnoucePushActivity">
+
+    <include layout="@layout/toolbar_share" />
+
+    <View style="@style/view_common" />
+
+    <EditText
+        android:id="@+id/am_et_title"
+        style="@style/editText_common_small"
+        android:background="@color/white"
+        android:hint="@string/title_input" />
+
+    <View style="@style/view_common" />
+
+    <View
+        style="@style/view_common"
+        android:layout_marginTop="@dimen/margin_top_small" />
+
+    <View style="@style/view_common" />
+
+    <TextView
+        android:id="@+id/am_tv_range"
+        style="@style/container_common_small"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:gravity="center_vertical"
+        android:text="@string/range_select"
+        android:textColor="@color/textcolor_common"
+        android:textSize="@dimen/textsize_common" />
+
+    <View style="@style/view_common" />
+
+    <EditText
+        android:id="@+id/am_et_content"
+        style="@style/editText_common_big"
+        android:gravity="top"
+        android:hint="@string/content_input"
+        android:paddingTop="@dimen/margin" />
+
+    <View style="@style/view_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_common"
+            android:layout_marginLeft="@dimen/margin_common"
+            android:text="附件名称：" />
+
+        <EditText
+            android:id="@+id/am_et_filename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:lines="1"
+            android:enabled="false"
+            android:singleLine="true"
+            android:textColor="@color/textcolor_common"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/am_tv_upfile"
+            style="@style/textView_common_blue"
+            android:layout_marginRight="@dimen/margin_common"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/imb_add"
+            android:text="上传附件" />
+
+        <TextView
+            android:id="@+id/am_tv_deletefile"
+            style="@style/textView_common_blue"
+            android:layout_marginRight="@dimen/margin_common"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/btn_del"
+            android:text="删除附件"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/view_common" />
+
+    <GridView
+        android:id="@+id/ap_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:horizontalSpacing="5dp"
+        android:minHeight="50dp"
+        android:numColumns="2"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingTop="5dp" />
+
+    <View
+        android:id="@+id/ap_view_gone"
+        style="@style/view_common"
+        android:visibility="gone" />
+</LinearLayout>

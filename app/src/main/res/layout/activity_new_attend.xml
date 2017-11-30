@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonbg"
+    android:orientation="vertical"
+    tools:context="com.tphy.zhyycs.ui.attandence.NewAttendActivity">
+
+    <include layout="@layout/toolbar_share" />
+
+    <View style="@style/view_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/kq_et_content"
+                    style="@style/editText_common_small"
+                    android:layout_marginLeft="@dimen/margin_top_small"
+                    android:layout_marginRight="@dimen/margin_common"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edt_attend_content" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:layout_marginRight="@dimen/margin_common" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_common"
+                    android:src="@drawable/icon_location" />
+
+                <TextView
+                    style="@style/textview_common_gray"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:gravity="center"
+                    android:text="@string/kq_destination" />
+
+                <EditText
+                    android:id="@+id/kq_et_destination"
+                    style="@style/editText_common_small"
+                    android:layout_marginLeft="@dimen/margin_top_small"
+                    android:layout_marginRight="@dimen/margin_common"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:layout_marginRight="@dimen/margin_common" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_common"
+                    android:src="@drawable/icon_type" />
+
+                <TextView
+                    style="@style/textview_common_gray"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:gravity="center"
+                    android:text="@string/kq_type" />
+
+                <TextView
+                    android:id="@+id/kq_tv_leibie"
+                    style="@style/textView_common_blue"
+                    android:drawablePadding="@dimen/margin_top_small"
+                    android:drawableRight="@drawable/btn_circleadd"
+                    android:text="@string/kq_leibie" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:layout_marginRight="@dimen/margin_common" />
+
+            <RelativeLayout
+                android:id="@+id/kq_leaveType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/kq_tv_child"
+                    style="@style/textview_common_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/kq_leaveType" />
+
+                <TextView
+                    android:id="@+id/kq_tv_type"
+                    style="@style/textView_common_blue"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/kq_tv_child"
+                    android:drawablePadding="@dimen/margin_top_small"
+                    android:drawableRight="@drawable/btn_circleadd"
+                    android:text="@string/kq_leixing" />
+
+                <View
+                    style="@style/view_common"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_common"
+                    android:layout_marginRight="@dimen/margin_common" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kq_allday"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/allday_iv"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_common"
+                    android:src="@drawable/icon_allday" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/textview_common_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_toRightOf="@id/allday_iv"
+                    android:gravity="center"
+                    android:text="@string/kq_allday" />
+
+                <CheckBox
+                    android:id="@+id/kq_cb_allday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mar10dp"
+                    android:layout_toRightOf="@id/textView3"
+                    android:button="@drawable/allday_selector" />
+
+                <View
+                    style="@style/view_common"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_common"
+                    android:layout_marginRight="@dimen/margin_common" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/kq_all"
+                layout="@layout/kq_alldayview" />
+
+            <View
+                style="@style/view_common"
+                android:layout_marginLeft="@dimen/dp50"
+                android:layout_marginRight="@dimen/margin_common" />
+
+            <LinearLayout
+                android:id="@+id/kq_duration"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textview_common_gray"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="@string/kq_duration" />
+
+                <EditText
+                    android:id="@+id/kq_et_duration"
+                    style="@style/editText_common_small" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:layout_marginRight="@dimen/margin_common" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_shenhe"
+                    style="@style/textview_common_gray"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="@string/kq_xiangmu" />
+
+                <TextView
+                    android:id="@+id/kq_tv_xiangmu"
+                    style="@style/textView_common_blue"
+                    android:drawablePadding="@dimen/margin_top_small"
+                    android:drawableRight="@drawable/btn_circleadd"
+                    android:text="@string/kq_chooshen" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:layout_marginRight="@dimen/margin_common" />
+
+            <RelativeLayout
+                android:id="@+id/kq_renshi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/renshi_tv"
+                    style="@style/textview_common_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/kq_renshi" />
+
+                <TextView
+                    android:id="@+id/kq_tv_renshi"
+                    style="@style/textView_common_blue"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/renshi_tv"
+                    android:drawablePadding="@dimen/margin_top_small"
+                    android:drawableRight="@drawable/btn_circleadd"
+                    android:text="@string/kq_chooshen" />
+
+                <View
+                    style="@style/view_common"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_common"
+                    android:layout_marginRight="@dimen/margin_common" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kq_zong"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/zong_tv"
+                    style="@style/textview_common_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="@string/kq_zong" />
+
+                <TextView
+                    android:id="@+id/kq_tv_zong"
+                    style="@style/textView_common_blue"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/zong_tv"
+                    android:drawablePadding="@dimen/margin_top_small"
+                    android:drawableRight="@drawable/btn_circleadd"
+                    android:text="@string/kq_chooshen" />
+
+                <View
+                    style="@style/view_common"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_common"
+                    android:layout_marginRight="@dimen/margin_common" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/container_height_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textview_common_gray"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="@string/kq_chaosong" />
+
+                <TextView
+                    android:id="@+id/kq_tv_choochao"
+                    style="@style/textView_common_blue"
+                    android:drawablePadding="@dimen/margin_top_small"
+                    android:drawableRight="@drawable/btn_circleadd"
+                    android:text="@string/kq_choochao" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:layout_marginRight="@dimen/margin_common" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/kq_tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/yuan_bg"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

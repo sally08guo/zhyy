@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/container_height_small">
+
+    <TextView
+        android:id="@+id/alert_tv"
+        style="@style/textview_common"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/mar10dp"
+        android:layout_marginTop="@dimen/mar10dp"
+        android:text="测试" />
+
+    <RadioButton
+        android:id="@+id/alert_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/alert_radio" />
+
+
+</RelativeLayout>

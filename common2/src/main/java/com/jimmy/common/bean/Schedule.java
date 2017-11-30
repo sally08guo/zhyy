@@ -1,0 +1,236 @@
+package com.jimmy.common.bean;
+
+import java.io.Serializable;
+
+public class Schedule implements Serializable {
+
+    private int id;
+    private int color;
+    private String title;
+    private String desc;
+    private String location;
+    private int state;
+    private long time;
+    private int year;
+    private int month;
+    private int day;
+    private int eventSetId;
+    private String plantime;
+    private String plancontent;
+    private String planplace;
+    private String PName;
+    private String planStartTime;
+    private String planEndTime;
+    private int plantype;
+    private String code;
+    private String reason;
+    private String STATUS;
+    private boolean isToday;
+    private String signInTime;
+    private String signOffTime;
+    private String sendTime;
+
+    public void setToday(boolean today) {
+        isToday = today;
+    }
+
+    public String getSendTime() {
+        return sendTime;
+    }
+
+    public void setSendTime(String sendTime) {
+        this.sendTime = sendTime;
+    }
+
+    public String getSignInTime() {
+        return signInTime;
+    }
+
+    public void setSignInTime(String signInTime) {
+        this.signInTime = signInTime;
+    }
+
+    public String getSignOffTime() {
+        return signOffTime;
+    }
+
+    public void setSignOffTime(String signOffTime) {
+        this.signOffTime = signOffTime;
+    }
+
+    public boolean isToday() {
+        return isToday;
+    }
+
+    public void setIsToday(boolean today) {
+        isToday = today;
+    }
+
+    public String getSTATUS() {
+        return STATUS;
+    }
+
+    public void setSTATUS(String STATUS) {
+        this.STATUS = STATUS;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getPlanStartTime() {
+        return planStartTime;
+    }
+
+    public void setPlanStartTime(String planStartTime) {
+        this.planStartTime = planStartTime;
+    }
+
+    public String getPlanEndTime() {
+        return planEndTime;
+    }
+
+    public void setPlanEndTime(String planEndTime) {
+        this.planEndTime = planEndTime;
+    }
+
+    public String getPlantime() {
+        return plantime;
+    }
+
+    public void setPlantime(String plantime) {
+        this.plantime = plantime;
+    }
+
+    public String getPlancontent() {
+        return plancontent;
+    }
+
+    public void setPlancontent(String plancontent) {
+        this.plancontent = plancontent;
+    }
+
+    public String getPlanplace() {
+        return planplace;
+    }
+
+    public void setPlanplace(String planplace) {
+        this.planplace = planplace;
+    }
+
+    public String getPName() {
+        return PName;
+    }
+
+    public void setPName(String planleibei) {
+        this.PName = planleibei;
+    }
+
+    public int getPlantype() {
+        return plantype;
+    }
+
+    public void setPlantype(int plantype) {
+        this.plantype = plantype;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getColor() {
+        return color;
+    }
+
+    public void setColor(int color) {
+        this.color = color;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDesc() {
+        return desc == null ? "" : desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getLocation() {
+        return location == null ? "" : location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public long getTime() {
+        return time;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
+    }
+
+    public int getEventSetId() {
+        return eventSetId;
+    }
+
+    public void setEventSetId(int eventSetId) {
+        this.eventSetId = eventSetId;
+    }
+}

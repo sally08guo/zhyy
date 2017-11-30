@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tphy.zhyycs.ui.approval.activity.BDLCActivity">
+
+    <TextView
+        style="@style/textView_common_blue"
+        android:text="地址信息是：" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/textview_common"
+        android:text="地址信息"
+        />
+    <TextView
+        style="@style/textView_common_blue"
+        android:text="楼号是：" />
+
+    <TextView
+        android:id="@+id/tv_buildingnum"
+        style="@style/textview_common"
+        android:text="楼号"
+        />
+    <TextView
+        style="@style/textView_common_blue"
+        android:text="楼层是：" />
+
+    <TextView
+        android:id="@+id/tv_floor"
+        style="@style/textview_common"
+        android:text="楼层"
+        />
+</LinearLayout>

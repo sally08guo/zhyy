@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ContactItemView">
+        <attr name="contactItemImage" format="reference" />
+        <attr name="contactItemName" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SwipeDragLayout">
+        <attr name="need_offset" format="float" />
+        <attr name="ios" format="boolean" />
+        <attr name="click_to_close" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CirclePercentView">
+        <attr name="radius" format="dimension" />
+        <attr name="ringColor" format="color" />
+        <attr name="stripeWidth" format="dimension" /><!--色带宽度-->
+        <attr name="percent" format="integer" /><!--百分比 最大值为100-->
+        <attr name="smallColor" format="color" /><!--色带宽度-->
+        <!--外圈颜色-->
+        <attr name="bigColor" format="color" />
+
+        <!--中间字体颜色-->
+        <attr name="centerTextSize" format="dimension" />
+        <!--色带宽度-->
+    </declare-styleable>
+
+    <!--calendar-->
+
+    <declare-styleable name="WeekBarView">
+        <attr name="week_text_color" format="color" />
+        <attr name="week_text_size" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MonthCalendarView">
+        <attr name="month_selected_text_color" format="color" />
+        <attr name="month_selected_circle_color" format="color" />
+        <attr name="month_selected_circle_today_color" format="color" />
+        <attr name="month_normal_text_color" format="color" />
+        <attr name="month_today_text_color" format="color" />
+        <attr name="month_lunar_text_color" format="color" />
+        <attr name="month_hint_circle_color" format="color" />
+        <attr name="month_holiday_color" format="color" />
+        <attr name="month_last_or_next_month_text_color" format="color" />
+        <attr name="month_day_text_size" format="integer" />
+        <attr name="month_day_lunar_text_size" format="integer" />
+        <attr name="month_show_task_hint" format="boolean" />
+        <attr name="month_show_lunar" format="boolean" />
+        <attr name="month_show_holiday_hint" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="WeekCalendarView">
+        <attr name="week_selected_text_color" format="color" />
+        <attr name="week_selected_circle_color" format="color" />
+        <attr name="week_selected_circle_today_color" format="color" />
+        <attr name="week_normal_text_color" format="color" />
+        <attr name="week_today_text_color" format="color" />
+        <attr name="week_hint_circle_color" format="color" />
+        <attr name="week_holiday_color" format="color" />
+        <attr name="week_lunar_text_color" format="color" />
+        <attr name="week_day_text_size" format="integer" />
+        <attr name="week_day_lunar_text_size" format="integer" />
+        <attr name="week_show_task_hint" format="boolean" />
+        <attr name="week_show_lunar" format="boolean" />
+        <attr name="week_show_holiday_hint" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ScheduleLayout">
+        <attr name="default_view">
+            <enum name="month" value="0" />
+            <enum name="week" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DragDisplayBoard">
+        <attr name="board_select_circle_color" format="color" />
+        <attr name="board_select_border_color" format="color" />
+    </declare-styleable>
+
+
+    <!--corner_color 边角颜色，
+        scanner_color 扫描线颜色
+        possible_result_color 扫描点颜色
+        frame_color 扫描框边线颜色
+        mask_color 模糊区域颜色
+        label_text  框上方提示
+    -->
+    <declare-styleable name="ViewfinderView">
+        <attr name="corner_color" format="color"/>
+        <attr name="laser_color" format="color"/>
+        <attr name="frame_color" format="color" />
+        <attr name="mask_color" format="color" />
+        <attr name="result_point_color" format="color"/>
+        <attr name="result_color" format="color" />
+        <attr name="label_text_color" format="color"/>
+        <attr name="label_text" format="string"/>
+        <attr name="label_text_size" format="float"/>
+    </declare-styleable>
+</resources>

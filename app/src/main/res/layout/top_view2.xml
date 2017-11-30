@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="345dp"
+    android:layout_height="190dp">
+    <!--android:layout_width="345dp"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_view_bg">
+
+        <TextView
+            android:id="@+id/kq_tv_showQr"
+            style="@style/textview_common"
+            android:layout_marginLeft="@dimen/mar10dp"
+            android:layout_marginTop="@dimen/mar10dp"
+            android:drawableLeft="@mipmap/ic_qrcode"
+            android:drawablePadding="@dimen/margin_top_small"
+            android:gravity="center"
+            android:text="@string/text_qrCode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <TextView
+            android:id="@+id/kq_tv_showbuQian"
+            style="@style/textview_common"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar10dp"
+            android:layout_marginTop="@dimen/mar10dp"
+            android:gravity="center"
+            android:text="@string/start_Buqian"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <ImageView
+            android:id="@+id/kq_daka"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_zxing" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kq_tv_state"
+                style="@style/textview_common"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:text="点击打卡"
+                android:textColor="@color/white" />
+
+            <net.imknown.bettertextclockbackportlibrary.TextClock
+                android:id="@+id/kq_tv_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_common"
+                android:textStyle="bold"
+                app:forceUse="format24"
+                app:format24Hour="kk:mm:ss" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

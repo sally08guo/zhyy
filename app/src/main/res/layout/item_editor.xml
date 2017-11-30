@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/container_height_small"
+    android:background="@color/commonbg">
+
+    <TextView
+        android:id="@+id/item_editor_tv0"
+        style="@style/textview_common_gray"
+        android:layout_centerVertical="true"
+        android:text="审核人：" />
+
+    <TextView
+        android:id="@+id/item_editor_tv1"
+        style="@style/textView_common_blue"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_editor_tv0"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/btn_circleadd"
+        android:text="选择审核人" />
+
+    <View
+        style="@style/view_common"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

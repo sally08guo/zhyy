@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/toolbar_iv_back"
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mar10dp"
+        android:src="@drawable/a_back_baise"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/toolbar_iv_back"
+        android:paddingLeft="10dp"
+        android:text="返回"
+        android:textColor="@color/color_blue_common"
+        android:textSize="@dimen/textsize_common"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="主题"
+        android:textColor="@color/textcolor_common"
+        android:textSize="@dimen/textsize_common"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/toolbar_iv_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/mar10dp"
+        android:src="@mipmap/ic_modify"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/toolbar_iv_addIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/mar10dp"
+        android:src="@drawable/btn_add" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_common"
+        android:text="保存"
+        android:textColor="@color/color_blue_common"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        style="@style/view_common"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

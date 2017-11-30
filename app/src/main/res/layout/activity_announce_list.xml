@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonbg"
+    android:orientation="vertical"
+    tools:context="com.tphy.zhyycs.ui.announce.AnnounceListActivity">
+
+    <include layout="@layout/toolbar_share" />
+
+    <View style="@style/view_common" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/al_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height_small"
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/color_indicator"
+        app:tabSelectedTextColor="@color/color_blue_common"
+        app:tabTextAppearance="@style/tabLayoutTextSize"
+        app:tabTextColor="#333333" />
+
+    <com.tphy.zhyycs.utils.MyViewPager
+        android:id="@+id/al_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

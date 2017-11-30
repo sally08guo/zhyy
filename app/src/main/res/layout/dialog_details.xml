@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alert_tv_title"
+        style="@style/textView_common_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:gravity="center"
+        android:text="@string/select_user" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#38adff" />
+
+    <TextView
+        android:id="@+id/alert_tv_content"
+        style="@style/textview_common"
+        android:layout_width="match_parent"
+        android:lineSpacingExtra="8dp"
+        android:padding="@dimen/margin"
+
+        />
+
+    <TextView
+        android:id="@+id/alert_tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/alert_confirm_bg"
+        android:gravity="center"
+        android:text="@string/sure"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+</LinearLayout>

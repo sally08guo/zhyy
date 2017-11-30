@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonbg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_share" />
+
+    <View style="@style/view_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/container_height_small"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textview_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:gravity="center"
+                android:text="@string/bq_type" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="@dimen/margin_common"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <View style="@style/view_common" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/container_height_small"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textview_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:gravity="center"
+                android:text="@string/bq_person" />
+
+            <TextView
+                android:id="@+id/bq_tv_person"
+                style="@style/textView_common_blue"
+                android:drawablePadding="@dimen/margin_top_small"
+                android:drawableRight="@drawable/btn_circleadd"
+                android:text="@string/bq_person_choo" />
+        </LinearLayout>
+
+        <View style="@style/view_common" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/container_height_small"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textview_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:gravity="center"
+                android:text="@string/bq_time" />
+
+            <TextView
+                android:id="@+id/bq_tv_time"
+                style="@style/textView_common_blue"
+                android:drawablePadding="@dimen/margin_top_small"
+                android:drawableRight="@drawable/btn_circleadd"
+                android:text="@string/bq_time_choo" />
+        </LinearLayout>
+
+        <View style="@style/view_common" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/container_height_small"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textview_common"
+                android:layout_marginLeft="@dimen/margin_common"
+                android:gravity="center"
+                android:text="@string/bq_reason" />
+
+            <!--<TextView
+                android:id="@+id/bq_tv_reason"
+                style="@style/textView_common_blue"
+                android:drawablePadding="@dimen/margin_top_small"
+                android:drawableRight="@drawable/btn_circleadd"
+                android:text="@string/bq_reason_choo" />-->
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/bq_et_reason"
+            style="@style/editText_common_big"
+            android:gravity="top"
+            android:hint="@string/bq_reason_choo"
+            android:paddingTop="@dimen/margin" />
+
+        <View style="@style/view_common" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/kq_tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/yuan_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

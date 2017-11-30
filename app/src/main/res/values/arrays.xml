@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="buqian_type">
+        <item>上班签到</item>
+        <item>下班签退</item>
+    </string-array>
+</resources>

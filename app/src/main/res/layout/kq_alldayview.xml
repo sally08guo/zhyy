@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_common_gray"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="@string/kq_start" />
+
+        <TextView
+            android:id="@+id/kq_tv_start"
+            style="@style/textView_common_blue"
+            android:drawablePadding="@dimen/margin_top_small"
+            android:drawableRight="@drawable/btn_circleadd"
+            android:text="@string/kq_choo_time" />
+    </LinearLayout>
+    <View
+        style="@style/view_common"
+        android:layout_marginLeft="@dimen/dp50"
+        android:layout_marginRight="@dimen/margin_common" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_common_gray"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="@string/kq_end" />
+
+        <TextView
+            android:id="@+id/kq_tv_end"
+            style="@style/textView_common_blue"
+            android:drawablePadding="@dimen/margin_top_small"
+            android:drawableRight="@drawable/btn_circleadd"
+            android:text="@string/kq_choo_time" />
+    </LinearLayout>
+
+
+</merge>

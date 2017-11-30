@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_surface"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/item_al_typename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_to_icon"
+            android:paddingTop="@dimen/margin"
+            android:text="公告"
+            android:textColor="@color/color_type"
+            android:textSize="@dimen/sp15_text" />
+
+        <TextView
+            android:id="@+id/item_al_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_common"
+            android:gravity="right"
+            android:paddingTop="@dimen/margin"
+            android:text=""
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/sp16_text" />
+
+        <TextView
+            android:id="@+id/item_al_startman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_al_typename"
+            android:layout_marginLeft="@dimen/margin_to_icon"
+            android:layout_marginTop="@dimen/mar10dp"
+            android:paddingBottom="@dimen/mar10dp"
+            android:text=""
+            android:textColor="@color/color_gray_common"
+            android:textSize="@dimen/sp14_text" />
+
+        <TextView
+            android:id="@+id/item_al_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/item_al_typename"
+            android:layout_marginRight="@dimen/margin_common"
+            android:layout_marginTop="@dimen/mar10dp"
+            android:gravity="right"
+            android:paddingBottom="@dimen/mar10dp"
+            android:text=""
+            android:textColor="@color/color_gray_common"
+            android:textSize="@dimen/sp14_text" />
+
+        <View
+            style="@style/view_common"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

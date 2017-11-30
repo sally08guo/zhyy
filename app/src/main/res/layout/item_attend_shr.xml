@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_common_gray"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="审核人:" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            style="@style/textView_common_blue"
+            android:layout_marginLeft="5dp"
+            android:text="@string/kq_chooshen" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_common"
+        android:layout_marginLeft="@dimen/margin_common"
+        android:layout_marginRight="@dimen/margin_common" />
+
+    <LinearLayout
+        android:id="@+id/lyt_remark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_common_gray"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="备注:" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            style="@style/textView_common_blue"
+            android:layout_marginLeft="5dp"
+            android:text="@string/kq_chooshen" />
+    </LinearLayout>
+
+</LinearLayout>
